@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4cd1176173b29dae2681bedbcfdc910",
+    "content-hash": "a0b17717b93143c313e479637f074d81",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1270,60 +1270,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/anchor_link"
             }
-        },
-        {
-            "name": "drupal/better_normalizers",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/better_normalizers",
-                "reference": "57dc5eb4a757db7ef35eff5bdb7f6c28ade30268"
-            },
-            "require": {
-                "drupal/core": "^8.3"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta2+2-dev",
-                    "datestamp": "1493779095",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "andypost",
-                    "homepage": "https://www.drupal.org/user/118908"
-                },
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
-                }
-            ],
-            "description": "Improve the normalizers in core.",
-            "homepage": "https://www.drupal.org/project/better_normalizers",
-            "support": {
-                "source": "http://cgit.drupalcode.org/better_normalizers"
-            },
-            "time": "2017-05-03T02:35:27+00:00"
         },
         {
             "name": "drupal/block_style_plugins",
@@ -6339,16 +6285,16 @@
         },
         {
             "name": "ucdavis/sitefarm_seed",
-            "version": "dev-probo",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ucdavis/sitefarm_seed.git",
-                "reference": "272608b9165b4f66119acb369ba5d0df88db5d2a"
+                "reference": "270cc909b4ddc5f643482a949a91f52b7240a10a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ucdavis/sitefarm_seed/zipball/272608b9165b4f66119acb369ba5d0df88db5d2a",
-                "reference": "272608b9165b4f66119acb369ba5d0df88db5d2a",
+                "url": "https://api.github.com/repos/ucdavis/sitefarm_seed/zipball/270cc909b4ddc5f643482a949a91f52b7240a10a",
+                "reference": "270cc909b4ddc5f643482a949a91f52b7240a10a",
                 "shasum": ""
             },
             "require": {
@@ -6360,6 +6306,7 @@
                 "drupal/block_style_plugins": "1.*",
                 "drupal/ckwordcount": "1.*",
                 "drupal/config_update": "1.*",
+                "drupal/core": "^8.5.4",
                 "drupal/crop": "1.*",
                 "drupal/ctools": "3.*",
                 "drupal/default_content": "1.*",
@@ -6396,24 +6343,12 @@
             },
             "type": "drupal-profile",
             "extra": {
-                "installer-paths": {
-                    "modules/contrib/{$name}": [
-                        "type:drupal-module"
-                    ],
-                    "themes/contrib/{$name}": [
-                        "type:drupal-theme"
-                    ]
-                },
                 "patches": {
                     "drupal/core": {
-                        "Fix broken ckeditor style dropdowns for Objects": "https://www.drupal.org/files/issues/fix_ckeditor_styles_dropdown-2911749-17.patch",
-                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/the_views_integration-2786577-202.patch",
-                        "Profile Inheritance": "https://www.drupal.org/files/issues/1356276-408--8.4.x.patch",
-                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/multiple_upload_at_once-2644468-66.patch",
-                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #13": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-13.patch"
-                    },
-                    "drupal/photoswipe": {
-                        "php error: Render context is empty": "https://www.drupal.org/files/issues/render_context_empty-2824022-4.patch"
+                        "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270_0.patch",
+                        "Profile Inheritance": "https://www.drupal.org/files/issues/1356278-408--8.5.x-real.patch",
+                        "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2018-04-28/2644468-91.patch",
+                        "Drupalimage calling drupallink functions without checking if the plugin is loaded #15": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                     },
                     "drupal/url_embed": {
                         "make embeds responsive": "https://www.drupal.org/files/issues/option-to-make-embeds-responsive-2825602-2.patch"
@@ -6452,7 +6387,7 @@
                 }
             ],
             "description": "Drupal 8 base profile for the SiteFarm platform",
-            "time": "2018-06-20T00:27:00+00:00"
+            "time": "2018-06-20T02:24:34+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
