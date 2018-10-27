@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0b17717b93143c313e479637f074d81",
+    "content-hash": "1f7c2515c45039c5118016e41faa896a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1270,6 +1270,60 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/anchor_link"
             }
+        },
+        {
+            "name": "drupal/better_normalizers",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/better_normalizers",
+                "reference": "57dc5eb4a757db7ef35eff5bdb7f6c28ade30268"
+            },
+            "require": {
+                "drupal/core": "^8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2+2-dev",
+                    "datestamp": "1493779095",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "andypost",
+                    "homepage": "https://www.drupal.org/user/118908"
+                },
+                {
+                    "name": "chr.fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Improve the normalizers in core.",
+            "homepage": "https://www.drupal.org/project/better_normalizers",
+            "support": {
+                "source": "http://cgit.drupalcode.org/better_normalizers"
+            },
+            "time": "2017-05-03 02:35:27"
         },
         {
             "name": "drupal/block_style_plugins",
@@ -6285,16 +6339,16 @@
         },
         {
             "name": "ucdavis/sitefarm_seed",
-            "version": "dev-8.x-1.x",
+            "version": "dev-patch-update",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ucdavis/sitefarm_seed.git",
-                "reference": "270cc909b4ddc5f643482a949a91f52b7240a10a"
+                "url": "https://github.com/thinkdrop/sitefarm_seed.git",
+                "reference": "1233d2a115b5cdb50b455bdb09d717f3d69f36e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ucdavis/sitefarm_seed/zipball/270cc909b4ddc5f643482a949a91f52b7240a10a",
-                "reference": "270cc909b4ddc5f643482a949a91f52b7240a10a",
+                "url": "https://api.github.com/repos/thinkdrop/sitefarm_seed/zipball/1233d2a115b5cdb50b455bdb09d717f3d69f36e2",
+                "reference": "1233d2a115b5cdb50b455bdb09d717f3d69f36e2",
                 "shasum": ""
             },
             "require": {
@@ -6346,7 +6400,7 @@
                 "patches": {
                     "drupal/core": {
                         "datetime-range views enhancements": "https://www.drupal.org/files/issues/2786577-270_0.patch",
-                        "Profile Inheritance": "https://www.drupal.org/files/issues/1356278-408--8.5.x-real.patch",
+                        "Profile Inheritance": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.2.patch",
                         "multiple image upload dimension fix": "https://www.drupal.org/files/issues/2018-04-28/2644468-91.patch",
                         "Drupalimage calling drupallink functions without checking if the plugin is loaded #15": "https://www.drupal.org/files/issues/edit_drupalimage-2855521-15.patch"
                     },
@@ -6355,7 +6409,6 @@
                     }
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -6387,7 +6440,11 @@
                 }
             ],
             "description": "Drupal 8 base profile for the SiteFarm platform",
-            "time": "2018-06-20T02:24:34+00:00"
+            "support": {
+                "issues": "https://github.com/ucdavis/sitefarm-seed/issues",
+                "source": "https://github.com/ucdavis/sitefarm-seed"
+            },
+            "time": "2018-10-27 00:55:26"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -6833,7 +6890,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2018-06-24T20:08:51+00:00"
+            "time": "2018-06-24 20:08:51"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -7005,7 +7062,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-10-10T12:39:06+00:00"
+            "time": "2018-10-10 12:39:06"
         },
         {
             "name": "doctrine/instantiator",
